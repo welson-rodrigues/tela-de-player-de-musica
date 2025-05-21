@@ -9,11 +9,17 @@ export default function Index() {
       />
 
       <View style={styles.controlsContainer}>
+
+         <Image 
+          style={styles.Menu}
+          source={require('../assets/images/Repeat.png')}
+        />
+
         <Image 
           style={styles.Repeat}
           source={require('../assets/images/esquerda.png')}
         />
-        
+
         <View style={styles.ellipseContainer}>
           <Image 
             style={styles.Ellipse}
@@ -28,6 +34,11 @@ export default function Index() {
         <Image 
           style={styles.Next}
           source={require('../assets/images/direita.png')}
+        />
+
+         <Image 
+          style={styles.Menu}
+          source={require('../assets/images/Menu.png')}
         />
 
       </View>
@@ -86,13 +97,16 @@ const styles = StyleSheet.create ({
   Repeat: {
     width: 40,
     height: 40,
-    right: 20,
+    left: 10,
   },
 
   Next: {
     width: 40,
     height: 40,
-    left: 20
+    right: 10,
   },
-  
+
+  Menu: {
+
+  }
 })
