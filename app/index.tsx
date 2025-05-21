@@ -46,7 +46,7 @@ const styles = StyleSheet.create ({
     height: 30,
     position: 'absolute',
     top: '50%',
-    left: '50%',
+    left: '54%',
     transform: [{ translateX: -15 }, { translateY: -15 }], // metade de 30 para centralizar
   },
 
