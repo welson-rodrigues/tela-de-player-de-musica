@@ -1,5 +1,5 @@
-import { Text, View, StyleSheet, Image } from "react-native";
-import { IconButton, MD3Colors } from 'react-native-paper';
+import { Image, StyleSheet, View } from "react-native";
+import { Icon, MD3Colors } from 'react-native-paper';
 
 export default function Index() {
   return (
@@ -25,10 +25,14 @@ export default function Index() {
             style={styles.Ellipse}
             source={require('../assets/images/Ellipse 1.png')}
           />
-          <Image 
-            style={styles.Play}
-            source={require('../assets/images/Play.png')}
-          />
+
+          <View style={styles.PlayContainer}>
+            <Icon
+              source="play-outline"
+              color={MD3Colors.error50}
+              size={50}
+            />
+          </View>
         </View>
 
         <Image 
@@ -69,12 +73,12 @@ const styles = StyleSheet.create ({
   },
 
   Play: {
-    width: 35,
-    height: 30,
+    //width: 35,
+    //height: 30,
     position: 'absolute',
     top: '50%',
-    left: '51%',
-    transform: [{ translateX: -15 }, { translateY: -15 }], //metade de 30 para centralizar
+    left: '50%',
+    transform: [{ translateX: -25 }, { translateY: -25 }], //metade de 30 para centralizar
   },
 
   ellipseContainer: {
@@ -91,7 +95,7 @@ const styles = StyleSheet.create ({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginTop: 140,
+    marginTop: 200,
   },
 
   Repeat: {
@@ -108,5 +112,11 @@ const styles = StyleSheet.create ({
 
   Menu: {
 
-  }
+  },
+  PlayContainer: {
+    position: 'absolute',
+    top: '50%',
+    left: '55%',
+    transform: [{ translateX: -25 }, { translateY: -25 }],
+  },
 })
