@@ -8,14 +8,20 @@ export default function Index() {
         <Icon
           source="menu-down"
 	  color={"#FFFFFF"}
-	  size={40}
-	  style={styles.menuDown}
+	  size={45}
         />
       </View>	
 
       <Image style={styles.imagemMusica}
       source={require("../assets/images/Oumou Sangaré.jpg")}
       />
+     <View style={styles.starContainer}>
+       <Icon
+         source="star"
+	 color={"#BF6A02"}
+	 size={45}
+       />
+     </View>
 
       <View style={styles.controlsContainer}>
 
@@ -75,7 +81,7 @@ const styles = StyleSheet.create ({
   },
 
   imagemMusica: {
-    marginTop: 20,
+    marginTop: 15,
     width: 330,
     height: 330,
     borderRadius: 25,
@@ -111,7 +117,7 @@ const styles = StyleSheet.create ({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginTop: 150,
+    marginTop: 120,
     gap: 20, //espaço entre os ícones
   },
 
@@ -130,7 +136,11 @@ const styles = StyleSheet.create ({
     marginTop: -20,
   },
 
-  menuDown: {
-    marginTop: 20,
+  starContainer: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    marginTop: 13,
   },
+
 })
