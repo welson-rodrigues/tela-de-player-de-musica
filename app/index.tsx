@@ -29,7 +29,7 @@ export default function Index() {
           <View style={styles.PlayContainer}>
             <Icon
               source="play-outline"
-              color={MD3Colors.error50}
+              color={'#FFFFFF'}
               size={50}
             />
           </View>
