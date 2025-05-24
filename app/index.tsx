@@ -15,10 +15,12 @@ export default function Index() {
           source={require('../assets/images/Repeat.png')}
         />
 
-        <Image 
-          style={styles.Repeat}
-          source={require('../assets/images/esquerda.png')}
-        />
+        <Icon
+	  source="skip-previous"
+	  color={"#FFFFFF"}
+	  size={40}
+	  style={styles.Repeat}
+	/>
 
         <View style={styles.ellipseContainer}>
           <Image 
@@ -35,10 +37,12 @@ export default function Index() {
           </View>
         </View>
 
-        <Image 
-          style={styles.Next}
-          source={require('../assets/images/direita.png')}
-        />
+        <Icon
+	  source="skip-next"
+	  color={"#FFFFFF"}
+	  size={40}
+	  style={styles.Next}
+	/>
 
          <Image 
           style={styles.Menu}
