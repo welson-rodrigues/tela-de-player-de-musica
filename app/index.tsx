@@ -10,16 +10,18 @@ export default function Index() {
 
       <View style={styles.controlsContainer}>
 
-         <Image 
-          style={styles.Menu}
-          source={require('../assets/images/Repeat.png')}
-        />
+	<Icon
+	  source="repeat"
+	  color={"#FFFFFF"}
+	  size={40}
+	 // style={styles.Menu}
+	/>         
 
         <Icon
 	  source="skip-previous"
 	  color={"#FFFFFF"}
 	  size={40}
-	  style={styles.Repeat}
+	 // style={styles.Repeat}
 	/>
 
         <View style={styles.ellipseContainer}>
@@ -41,13 +43,14 @@ export default function Index() {
 	  source="skip-next"
 	  color={"#FFFFFF"}
 	  size={40}
-	  style={styles.Next}
+	 // style={styles.Next}
 	/>
 
-         <Image 
-          style={styles.Menu}
-          source={require('../assets/images/Menu.png')}
-        />
+         <Icon
+	  source="menu"
+	  color={"#FFFFFF"}
+	  size={40}
+	/>
 
       </View>
     </View>
@@ -100,23 +103,10 @@ const styles = StyleSheet.create ({
     justifyContent: 'space-around',
     alignItems: 'center',
     marginTop: 200,
+    gap: 20, //espaço entre os ícones
   },
 
-  Repeat: {
-    width: 40,
-    height: 40,
-    left: 10,
-  },
 
-  Next: {
-    width: 40,
-    height: 40,
-    right: 10,
-  },
-
-  Menu: {
-
-  },
   PlayContainer: {
     position: 'absolute',
     top: '50%',
