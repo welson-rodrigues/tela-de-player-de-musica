@@ -4,6 +4,15 @@ import { Icon, MD3Colors } from 'react-native-paper';
 export default function Index() {
   return (
     <View style={styles.container}>
+      <View style={styles.menuContainer}>
+        <Icon
+          source="menu-down"
+	  color={"#FFFFFF"}
+	  size={40}
+	  style={styles.menuDown}
+        />
+      </View>	
+
       <Image style={styles.imagemMusica}
       source={require("../assets/images/Oumou Sangaré.jpg")}
       />
@@ -66,7 +75,7 @@ const styles = StyleSheet.create ({
   },
 
   imagemMusica: {
-    marginTop: 10,
+    marginTop: 20,
     width: 330,
     height: 330,
     borderRadius: 25,
@@ -102,7 +111,7 @@ const styles = StyleSheet.create ({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginTop: 200,
+    marginTop: 150,
     gap: 20, //espaço entre os ícones
   },
 
@@ -112,5 +121,16 @@ const styles = StyleSheet.create ({
     top: '50%',
     left: '55%',
     transform: [{ translateX: -25 }, { translateY: -25 }],
+  },
+
+  menuContainer: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    marginTop: -20,
+  },
+
+  menuDown: {
+    marginTop: 20,
   },
 })
