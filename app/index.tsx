@@ -7,37 +7,38 @@ export default function Index() {
       <View style={styles.menuContainer}>
         <Icon
           source="menu-down"
-	  color={"#FFFFFF"}
-	  size={45}
+          color={"#FFFFFF"}
+          size={45}
         />
-      </View>	
+      </View>
 
-      <Image style={styles.imagemMusica}
-      source={require("../assets/images/Oumou Sangaré.jpg")}
+      <Image 
+        style={styles.imagemMusica}
+        source={require("../assets/images/Oumou Sangaré.jpg")}
       />
-     <View style={styles.starContainer}>
-       <Icon
-         source="star"
-	 color={"#BF6A02"}
-	 size={45}
-       />
-     </View>
+
+      <View style={styles.starContainer}>
+        <Icon
+          source="star"
+          color={"#BF6A02"}
+          size={45}
+        />
+      </View>
 
       <View style={styles.controlsContainer}>
-
-	<Icon
-	  source="repeat"
-	  color={"#FFFFFF"}
-	  size={40}
-	 // style={styles.Menu}
-	/>         
+        <Icon
+          source="repeat"
+          color={"#FFFFFF"}
+          size={40}
+          // style={styles.Menu}
+        />
 
         <Icon
-	  source="skip-previous"
-	  color={"#FFFFFF"}
-	  size={40}
-	 // style={styles.Repeat}
-	/>
+          source="skip-previous"
+          color={"#FFFFFF"}
+          size={40}
+          // style={styles.Repeat}
+        />
 
         <View style={styles.ellipseContainer}>
           <Image 
@@ -55,24 +56,23 @@ export default function Index() {
         </View>
 
         <Icon
-	  source="skip-next"
-	  color={"#FFFFFF"}
-	  size={40}
-	 // style={styles.Next}
-	/>
+          source="skip-next"
+          color={"#FFFFFF"}
+          size={40}
+          // style={styles.Next}
+        />
 
-         <Icon
-	  source="menu"
-	  color={"#FFFFFF"}
-	  size={40}
-	/>
-
+        <Icon
+          source="menu"
+          color={"#FFFFFF"}
+          size={40}
+        />
       </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 30,
@@ -112,7 +112,7 @@ const styles = StyleSheet.create ({
     alignSelf: 'center',
     //marginTop: 50,
   },
-  
+
   controlsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -120,7 +120,6 @@ const styles = StyleSheet.create ({
     marginTop: 120,
     gap: 20, //espaço entre os ícones
   },
-
 
   PlayContainer: {
     position: 'absolute',
@@ -142,5 +141,4 @@ const styles = StyleSheet.create ({
     justifyContent: 'flex-end',
     marginTop: 13,
   },
-
-})
+});
