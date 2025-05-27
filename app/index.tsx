@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   },
 
   imagemMusica: {
-    marginTop: 15,
+    marginTop: 10,
     width: '100%',
     height: 330,
     borderRadius: 25,
