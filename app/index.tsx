@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 
   imagemMusica: {
     marginTop: 15,
-    width: 330,
+    width: '100%',
     height: 330,
     borderRadius: 25,
   },
