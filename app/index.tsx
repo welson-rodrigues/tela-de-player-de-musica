@@ -17,12 +17,12 @@ export default function Index() {
           size={45}
         />
       </View>
-
+        
       <Image
         style={styles.imagemMusica}
-        source={require("../assets/images/Oumou Sangaré.jpg")}
+        source={require("../assets/images/Oumou Sangaré.jpg")} 
       />
-
+        
         <Image
           style={styles.nomeMusica}
           source={require("../assets/images/Saa Magni.png")}
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: "50%",
     left: "55%",
-    transform: [{ translateX: -25 }, { translateY: -25 }],
+    transform: [{ translateX: -25 }, { translateY: -25 }], // totalmente no meio
   },
 
   menuContainer: {
