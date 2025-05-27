@@ -12,7 +12,7 @@ export default function Index() {
       />
       <View style={styles.menuContainer}>
         <Icon
-        source="menu-down" // não achei os "3 pontinhos" na documentação
+          source="dots-vertical"
           color={"#FFFFFF"}
           size={45}
         />
