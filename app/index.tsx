@@ -1,11 +1,16 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-paper";
 import ProgressBar from 'react-native-progress/Bar';
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <LinearGradient
+        colors={['rgba(128, 128, 128, 1)', 'transparent']}
+        style={styles.background}
+      />
       <View style={styles.menuContainer}>
         <Icon
         source="menu-down"
@@ -158,4 +163,12 @@ const styles = StyleSheet.create({
     marginTop: 4,
     width: 134,
   },
+
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: 570,
+  }
 });
