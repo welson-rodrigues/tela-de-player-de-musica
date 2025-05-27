@@ -1,8 +1,7 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, View, Text } from "react-native";
 import { Icon } from "react-native-paper";
 import ProgressBar from 'react-native-progress/Bar';
 import { LinearGradient } from 'expo-linear-gradient';
-
 
 export default function Index() {
   return (
@@ -13,7 +12,7 @@ export default function Index() {
       />
       <View style={styles.menuContainer}>
         <Icon
-        source="menu-down"
+        source="menu-down" // não achei os "3 pontinhos" na documentação
           color={"#FFFFFF"}
           size={45}
         />
@@ -51,6 +50,10 @@ export default function Index() {
           unfilledColor="#333"
           borderWidth={0}
         />
+
+        <Text style={styles.inicio}>4:25</Text>
+        <Text style={styles.fim}>7:21</Text>
+        
       </View>
 
       <View style={styles.controlsContainer}>
@@ -159,6 +162,7 @@ const styles = StyleSheet.create({
     width: 148,
     height: 26,
   },
+  
   nomeAutor: {
     marginTop: 4,
     width: 134,
@@ -170,5 +174,17 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     height: 560,
-  }
+  },
+
+  inicio:{
+    color: '#808080',
+    right: 162,
+    marginTop: 5,
+  },
+
+  fim: {
+    color: '#808080',
+    left: 162,
+    marginTop: -20,
+  },
 });
