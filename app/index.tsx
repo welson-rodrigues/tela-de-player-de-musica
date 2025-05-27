@@ -1,4 +1,4 @@
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View, Text } from "react-native";
 import { Icon } from "react-native-paper";
 import ProgressBar from 'react-native-progress/Bar';
 
@@ -18,6 +18,11 @@ export default function Index() {
         style={styles.imagemMusica}
         source={require("../assets/images/Oumou Sangaré.jpg")}
       />
+
+      <View style={styles.text}>
+        <Text style={styles.fonte}>Música</Text>
+        <Text style={styles.funcao}>Autor</Text>
+      </View>
 
       <View style={styles.starContainer}>
         <Icon
@@ -136,6 +141,17 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     justifyContent: "flex-end",
-    marginTop: 20,
+    marginTop: -25,
   },
+
+  fonte: {
+    marginTop: 18,
+    color: 'white',
+    fontSize: 20,
+  },
+  
+  funcao: {
+    color: 'white',
+    fontSize: 20,
+  }
 });
