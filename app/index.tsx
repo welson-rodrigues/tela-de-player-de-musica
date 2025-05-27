@@ -1,9 +1,9 @@
 import { Image, StyleSheet, View } from "react-native";
 import { Icon } from "react-native-paper";
+import ProgressBar from 'react-native-progress/Bar';
+
 
 export default function Index() {
-  const progress = 60;  // Exemplo: 60% de progresso
-
   return (
     <View style={styles.container}>
       <View style={styles.menuContainer}>
@@ -27,9 +27,15 @@ export default function Index() {
         />
       </View>
 
-      {/* Barra de Progresso */}
-      <View style={styles.progressContainer}>
-        <View style={[styles.progressBar, { width: `${progress}%` }]} />
+      <View style={{ marginTop: 110, alignItems: 'center' }}>
+        <ProgressBar 
+          progress={0.6}
+          width={350}
+          height={10}
+          color="#FFFFFF"
+          unfilledColor="#333"
+          borderWidth={0}
+        />
       </View>
 
       <View style={styles.controlsContainer}>
@@ -131,19 +137,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "flex-end",
     marginTop: 13,
-  },
-
-  progressContainer: {
-    width: "100%",
-    height: 5,
-    backgroundColor: "#555",
-    borderRadius: 5,
-    marginTop: 30,
-  },
-
-  progressBar: {
-    height: "100%",
-    backgroundColor: "#FFFFFF",
-    borderRadius: 5,
   },
 });
