@@ -136,6 +136,6 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     justifyContent: "flex-end",
-    marginTop: 13,
+    marginTop: 20,
   },
 });
