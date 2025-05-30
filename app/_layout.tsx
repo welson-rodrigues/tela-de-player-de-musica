@@ -12,6 +12,6 @@ export default function RootLayout() {
         },
       }}>
       <Stack.Screen name="index" />
-      <Stack.Screen name="details" />
+      <Stack.Screen name="tela2" />
     </Stack>
 }

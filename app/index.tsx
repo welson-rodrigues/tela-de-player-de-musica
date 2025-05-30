@@ -17,7 +17,7 @@ export default function Index() {
           size={45}
         />
       </View>
-        
+      
       <Image
         style={styles.imagemMusica}
         source={require("../assets/images/Oumou Sangaré.jpg")} 
