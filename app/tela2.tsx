@@ -67,19 +67,20 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         width: "100%",
-        marginTop: -8,
+        marginTop: -15,
         height: 60,
     },
     
     pesquisa: {
         flex: 1,
-        height: 45,
+        height: 42,
         marginLeft: 0,
+        right: 5,
     },
 
     tune: {
         marginTop: 5,
-        right: 10,
+        right: 14,
     },
 
     musica: {
