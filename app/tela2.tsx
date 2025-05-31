@@ -2,7 +2,8 @@ import { StyleSheet, View, Text, Image } from "react-native";
 //import { Link } from "expo-router";
 import * as React from 'react';
 import { Searchbar, IconButton  } from 'react-native-paper';
-import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+import { Icon } from "react-native-paper";
+//import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 
 export default function Index() {
     const [searchQuery, setSearchQuery] = React.useState('');
@@ -35,7 +36,19 @@ export default function Index() {
                 <View><Text style={styles.textos}>Vídeos</Text></View>
                 <View><Text style={styles.textos}>Artistas</Text></View>
                 <View><Text style={styles.textos}>Álbuns</Text></View>
-                
+            </View>
+            <View style={styles.aleatorioContainer}>
+                <Image
+                    style={styles.Ellipse}
+                    source={require("../assets/images/Ellipse 2.png")}/>
+                <View style={styles.play}>
+                    <Icon
+                        source="play-outline"
+                        color={"#FFFFFF"}
+                        size={26}
+                    />
+                </View>
+                 <View><Text style={styles.aleatorio}>Reprodução aleatória</Text></View>
             </View>
         </View>
     );
@@ -60,7 +73,7 @@ const styles = StyleSheet.create({
     
     pesquisa: {
         flex: 1,
-        height: 50,
+        height: 45,
         marginLeft: 0,
     },
 
@@ -101,5 +114,30 @@ const styles = StyleSheet.create({
         marginTop: 5,
         width: 30,
         resizeMode: "contain",
-    }
+    },
+
+    aleatorioContainer: {
+        flexDirection: "row",
+        right: 85,
+        marginTop: 13,
+    },
+
+    aleatorio: {
+        color: '#FFFFFF',
+        fontSize: 17,
+        marginTop: 10,
+        fontFamily: 'Arial',
+        left: 14,
+        top: -4,
+    },
+
+    Ellipse: {
+        
+    },
+
+    play: {
+        position: "absolute",
+        top: "2%",
+        left: "1.3%",
+    },
 });
