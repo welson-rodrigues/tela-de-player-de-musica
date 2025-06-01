@@ -1,5 +1,5 @@
 import { StyleSheet, View, Text, Image } from "react-native";
-//import { Link } from "expo-router";
+import { Link } from "expo-router";
 import * as React from 'react';
 import { Searchbar, IconButton  } from 'react-native-paper';
 import { Icon } from "react-native-paper";

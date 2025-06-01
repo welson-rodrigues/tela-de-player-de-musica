@@ -1,5 +1,6 @@
 import { Image, StyleSheet, View, Text } from "react-native";
 import { Icon } from "react-native-paper";
+import { Link } from "expo-router";
 import ProgressBar from 'react-native-progress/Bar';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -23,7 +24,7 @@ export default function Index() {
         source={require("../assets/images/Oumou Sangaré.jpg")} 
       />
         
-        <Image
+       <Image
           style={styles.nomeMusica}
           source={require("../assets/images/Saa Magni.png")}
         />
@@ -51,7 +52,7 @@ export default function Index() {
           borderWidth={0}
         />
 
-        <Text style={styles.inicio}>4:25</Text>
+        <Link href="/tela2"><Text style={styles.inicio}>4:25</Text></Link>
         <Text style={styles.fim}>7:21</Text>
         
       </View>
