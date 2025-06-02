@@ -1,150 +1,153 @@
 import { StyleSheet, View, Text, Image } from "react-native";
-import { Link } from "expo-router";
+//import { Link } from "expo-router";
 import * as React from 'react';
 import { Searchbar, IconButton  } from 'react-native-paper';
 import { Icon } from "react-native-paper";
-//import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 export default function Index() {
     const [searchQuery, setSearchQuery] = React.useState('');
     return (
-        <View style={styles.container}>
-            <View style={styles.pesquisarContainer}>
-                <IconButton
-                    style={styles.tune}
-                    icon="tune"
-                    iconColor="#FFFFFF"
-                    size={42}
-                    onPress={() => {}}
-                />
-                <Searchbar
-                    style={styles.pesquisa}
-                    placeholder="Pesquisar músicas e etc"
-                    onChangeText={setSearchQuery}
-                    value={searchQuery}
-                    />       
-            </View>
-            <View style={styles.nomesContainer}>
-                <View style={styles.musicaComImagem}>
-                <View><Text style={styles.musica}>Músicas</Text></View>
-                <Image
-                    style={styles.imagemRoxo}
-                    source={require("../assets/images/roxo_musica.png")}
+        <SafeAreaView style={{flex: 1, backgroundColor: 'black'}}>
+            <View style={styles.container}>
+                <View style={styles.pesquisarContainer}>
+                    <IconButton
+                        style={styles.tune}
+                        icon="tune"
+                        iconColor="#FFFFFF"
+                        size={42}
+                        onPress={() => {}}
                     />
+                    <Searchbar
+                        style={styles.pesquisa}
+                        placeholder="Pesquisar músicas e etc"
+                        onChangeText={setSearchQuery}
+                        value={searchQuery}
+                        />       
                 </View>
-                
-                <View><Text style={styles.textos}>Vídeos</Text></View>
-                <View><Text style={styles.textos}>Artistas</Text></View>
-                <View><Text style={styles.textos}>Álbuns</Text></View>
-            </View>
-            <View style={styles.aleatorioContainer}>
-                <Image
-                    source={require("../assets/images/Ellipse 2.png")}/>
-                <View style={styles.play}>
-                    <Icon
-                        source="play-outline"
-                        color={"#FFFFFF"}
-                        size={26}
-                    />
+                <View style={styles.nomesContainer}>
+                    <View style={styles.musicaComImagem}>
+                    <View><Text style={styles.musica}>Músicas</Text></View>
+                    <Image
+                        style={styles.imagemRoxo}
+                        source={require("../assets/images/roxo_musica.png")}
+                        />
+                    </View>
+                    
+                    <View><Text style={styles.textos}>Vídeos</Text></View>
+                    <View><Text style={styles.textos}>Artistas</Text></View>
+                    <View><Text style={styles.textos}>Álbuns</Text></View>
                 </View>
-                 <View><Text style={styles.aleatorio}>Reprodução aleatória</Text></View>
-            </View>
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/jorge.jpg")}
-                    />
-                
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Jorge da Capadócia</Text>
-                    <Text style={styles.canal}>Racionais MC's | Classicos</Text>
+                <View style={styles.aleatorioContainer}>
+                    <Image
+                        source={require("../assets/images/Ellipse 2.png")}/>
+                    <View style={styles.play}>
+                        <Icon
+                            source="play"
+                            color={"#FFFFFF"}
+                            size={25}
+                        />
+                    </View>
+                     <View><Text style={styles.aleatorio}>Reprodução aleatória</Text></View>
+                </View>
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/jorge.jpg")}
+                        />
+                    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Jorge da Capadócia</Text>
+                        <Text style={styles.canal}>Racionais MC's | Classicos</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/jorge.jpg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Jesus Chorou</Text>
+                        <Text style={styles.canal}>Racionais MC's | Classicos</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/homem.jpeg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Homem na Estrada</Text>
+                        <Text style={styles.canal}>Racionais MC's | Raio X do Brasil</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/fantan.jpeg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Fantan Ni Mone</Text>
+                        <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/fantan.jpeg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Worotan</Text>
+                        <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/saa magni.jpeg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusicaTocando}>Saa Magni</Text>
+                        <Text style={styles.canal}>Oumou Sangaré | Ko Sira</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/onlyforyou.jpeg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Only For You</Text>
+                        <Text style={styles.canal}>Heartless Bastards - Topic | Heartless Ba...</Text>
+                    </View>
+                </View>
+    
+                <View style={styles.containerImagem}>
+                    <Image
+                        style={styles.imagens}
+                        source={require("../assets/images/once.jpeg")}
+                        />
+    
+                    <View style={styles.containerNomeMusica}>
+                        <Text style={styles.nomeMusica}>Once I Was Lonely</Text>
+                        <Text style={styles.canal}>Gregory Isaacs - Topic | Gregory Isaacs...</Text>
+                    </View>
                 </View>
             </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/jorge.jpg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Jesus Chorou</Text>
-                    <Text style={styles.canal}>Racionais MC's | Classicos</Text>
-                </View>
-            </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/homem.jpeg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Homem na Estrada</Text>
-                    <Text style={styles.canal}>Racionais MC's | Raio X do Brasil</Text>
-                </View>
-            </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/fantan.jpeg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Fantan Ni Mone</Text>
-                    <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
-                </View>
-            </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/fantan.jpeg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Worotan</Text>
-                    <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
-                </View>
-            </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/saa magni.jpeg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusicaTocando}>Saa Magni</Text>
-                    <Text style={styles.canal}>Oumou Sangaré | Ko Sira</Text>
-                </View>
-            </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/onlyforyou.jpeg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Only For You</Text>
-                    <Text style={styles.canal}>Heartless Bastards - Topic | Heartless Ba...</Text>
-                </View>
-            </View>
-
-            <View style={styles.containerImagem}>
-                <Image
-                    style={styles.imagens}
-                    source={require("../assets/images/once.jpeg")}
-                    />
-
-                <View style={styles.containerNomeMusica}>
-                    <Text style={styles.nomeMusica}>Once I Was Lonely</Text>
-                    <Text style={styles.canal}>Gregory Isaacs - Topic | Gregory Isaacs...</Text>
-                </View>
-            </View>
-        </View>
+            <View style={styles.rodape} />
+        </SafeAreaView>
     );
 }
 
@@ -228,8 +231,8 @@ const styles = StyleSheet.create({
 
     play: {
         position: "absolute",
-        top: "2%",
-        left: "1.3%",
+        top: "5%",
+        left: "1%",
     },
 
     containerImagem: {
@@ -262,5 +265,13 @@ const styles = StyleSheet.create({
     canal: {
         color: "#797979",
         top: 10,
+    },
+
+    rodape: {
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
+        height: 60, 
+        backgroundColor: '#18171c', 
     },
 });
