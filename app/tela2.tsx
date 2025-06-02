@@ -232,7 +232,7 @@ const styles = StyleSheet.create({
     play: {
         position: "absolute",
         top: "5%",
-        left: "1%",
+        left: "0.8%",
     },
 
     containerImagem: {
@@ -264,7 +264,7 @@ const styles = StyleSheet.create({
 
     canal: {
         color: "#797979",
-        top: 10,
+        top: 12,
     },
 
     rodape: {
