@@ -202,7 +202,29 @@ export default function Index() {
                     </View>
                 </View>
             </View>
-            <View style={styles.rodape} />
+            <View style={styles.rodape}>
+                <View style={styles.rodapeContainer}>
+                    <View style={styles.rodapeItem}>
+                        <IconButton
+                            icon="headphones"
+                            iconColor="#FFFFFF"
+                            size={40}
+                            onPress={() => {}}
+                        />
+                        <Text style={styles.minhasMusicas}>Minhas músicas</Text>
+                    </View>
+
+                    <View style={styles.rodapeItem}>
+                        <IconButton
+                            icon="video-outline"
+                            iconColor="#707A81"
+                            size={43}
+                            onPress={() => {}}
+                        />
+                        <Text style={styles.assistir}>Assistir</Text>
+                    </View>
+                </View>
+            </View>
         </SafeAreaView>
     );
 }
@@ -328,7 +350,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         width: '100%',
         height: 60, 
-        backgroundColor: '#18171c', 
+        backgroundColor: '#18171c',
     },
 
     tresPontos: {
@@ -356,4 +378,29 @@ const styles = StyleSheet.create({
         marginLeft: 70,
         top: 9,
     },
+
+    rodapeContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 30,  // ajuste conforme o espaçamento desejado
+        top: -10,
+    },
+
+    rodapeItem: {
+        alignItems: 'center',
+    },
+
+    minhasMusicas: {
+        color: '#FFFFFF',
+        fontSize: 12,
+        top: -20,
+    },
+
+    assistir: {
+        color: '#707A81',
+        fontSize: 12,
+        top: -20,
+    },
+
 });
