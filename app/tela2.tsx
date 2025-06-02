@@ -60,6 +60,13 @@ export default function Index() {
                         <Text style={styles.nomeMusica}>Jorge da Capadócia</Text>
                         <Text style={styles.canal}>Racionais MC's | Classicos</Text>
                     </View>
+                    <View style={styles.tresPontos}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
+                    </View>
                 </View>
     
                 <View style={styles.containerImagem}>
@@ -71,6 +78,13 @@ export default function Index() {
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Jesus Chorou</Text>
                         <Text style={styles.canal}>Racionais MC's | Classicos</Text>
+                    </View>
+                    <View style={styles.tresPontos}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
                     </View>
                 </View>
     
@@ -84,6 +98,13 @@ export default function Index() {
                         <Text style={styles.nomeMusica}>Homem na Estrada</Text>
                         <Text style={styles.canal}>Racionais MC's | Raio X do Brasil</Text>
                     </View>
+                    <View style={styles.homem}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
+                    </View>
                 </View>
     
                 <View style={styles.containerImagem}>
@@ -95,6 +116,13 @@ export default function Index() {
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Fantan Ni Mone</Text>
                         <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
+                    </View>
+                    <View style={styles.tresPontos}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
                     </View>
                 </View>
     
@@ -108,6 +136,13 @@ export default function Index() {
                         <Text style={styles.nomeMusica}>Worotan</Text>
                         <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
                     </View>
+                    <View style={styles.tresPontos}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
+                    </View>
                 </View>
     
                 <View style={styles.containerImagem}>
@@ -119,6 +154,13 @@ export default function Index() {
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusicaTocando}>Saa Magni</Text>
                         <Text style={styles.canal}>Oumou Sangaré | Ko Sira</Text>
+                    </View>
+                    <View style={styles.saa}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
                     </View>
                 </View>
     
@@ -132,6 +174,13 @@ export default function Index() {
                         <Text style={styles.nomeMusica}>Only For You</Text>
                         <Text style={styles.canal}>Heartless Bastards - Topic | Heartless Ba...</Text>
                     </View>
+                    <View style={styles.only}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
+                    </View>
                 </View>
     
                 <View style={styles.containerImagem}>
@@ -143,6 +192,13 @@ export default function Index() {
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Once I Was Lonely</Text>
                         <Text style={styles.canal}>Gregory Isaacs - Topic | Gregory Isaacs...</Text>
+                    </View>
+                    <View style={styles.Pontos}>
+                        <Icon
+                            source="dots-vertical"
+                            color={"#4C4C4C"}
+                            size={25}
+                        />
                     </View>
                 </View>
             </View>
@@ -273,5 +329,31 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 60, 
         backgroundColor: '#18171c', 
+    },
+
+    tresPontos: {
+        marginLeft: 110,
+        top: 12,
+        color: "#4C4C4C"
+    },
+
+    Pontos: {
+        marginLeft: 18,
+        top: 9,
+    },
+
+    only: {
+        marginLeft: 10,
+        top: 9,
+    },
+
+    saa: {
+        marginLeft: 117,
+        top: 12,
+    },
+
+    homem: {
+        marginLeft: 70,
+        top: 9,
     },
 });
