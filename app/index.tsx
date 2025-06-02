@@ -52,7 +52,7 @@ export default function Index() {
           borderWidth={0}
         />
 
-        <Link href="/tela2"><Text style={styles.inicio}>4:25</Text></Link>
+       <Text style={styles.inicio}>4:25</Text>
         <Text style={styles.fim}>7:21</Text>
         
       </View>
