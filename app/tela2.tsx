@@ -226,6 +226,37 @@ export default function Index() {
                     </View>
                 </View>
             </View>
+            <View style={styles.musicaAtual}>
+              <View style={styles.leftSection}>
+                <Image
+                    source={require("../assets/images/Ellipse 3.png")}
+                    style={styles.albumCover}
+                />
+                <Image
+                    source={require("../assets/images/saa magni.jpeg")}
+                    style={styles.elipseAlbun}
+                />
+                <View style={styles.textContainer}>
+                  <Text style={styles.musicTitle}>Saa Magni</Text>
+                  <Text style={styles.musicArtist}>Oumou Sangaré</Text>
+                </View>
+              </View>
+
+              <View style={styles.rightSection}>
+                <IconButton
+                  icon="play-circle-outline"
+                  iconColor="#FFFFFF"
+                  size={30}
+                  onPress={() => console.log('Play')}
+                />
+                <IconButton
+                  icon="skip-next"
+                  iconColor="#FFFFFF"
+                  size={30}
+                  onPress={() => console.log('Next')}
+                />
+              </View>
+            </View>
         </SafeAreaView>
     );
 }
@@ -357,6 +388,60 @@ const styles = StyleSheet.create({
         backgroundColor: '#18171c',
     },
 
+    musicaAtual: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      backgroundColor: '#B7A24D',
+      borderRadius: 35,
+      padding: 10,
+      marginHorizontal: 20,
+      marginBottom: 68,
+      height: 50,
+    },
+
+    leftSection: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+
+    albumCover: {
+        width: 70,
+        height: 70,
+        borderRadius: 25,
+        marginLeft: -13,
+        marginBottom: 40,
+    },
+
+    textContainer: {
+      justifyContent: 'center',
+    },
+
+    musicTitle: {
+      color: '#FFFFFF',
+      fontWeight: 'bold',
+      fontSize: 16,
+    },
+
+    musicArtist: {
+      color: '#F3ECC9',
+      fontSize: 12,
+    },
+
+    rightSection: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+
+    elipseAlbun: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        marginRight: -40,
+        marginBottom: 40,
+        right: 60,
+    },
+
     tresPontos: {
         marginLeft: 110,
         top: 12,
@@ -398,7 +483,7 @@ const styles = StyleSheet.create({
     minhasMusicas: {
         color: '#FFFFFF',
         fontSize: 12,
-        top: -20,
+        top: -18,
     },
 
     video: {
@@ -410,5 +495,13 @@ const styles = StyleSheet.create({
         fontSize: 12,
         top: -24,
     },
+
+    musicaAtualContainer: {
+        flexDirection: 'row',
+    },
+
+    musicaAtualItem: {
+        alignItems: 'center',
+    }
 
 });
