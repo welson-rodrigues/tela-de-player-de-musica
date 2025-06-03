@@ -216,6 +216,7 @@ export default function Index() {
 
                     <View style={styles.rodapeItem}>
                         <IconButton
+                            style={styles.video}
                             icon="video-outline"
                             iconColor="#707A81"
                             size={43}
@@ -400,10 +401,14 @@ const styles = StyleSheet.create({
         top: -20,
     },
 
+    video: {
+        top: -6,
+    },
+
     assistir: {
         color: '#707A81',
         fontSize: 12,
-        top: -20,
+        top: -24,
     },
 
 });
