@@ -208,7 +208,7 @@ export default function Index() {
                         <IconButton
                             icon="headphones"
                             iconColor="#FFFFFF"
-                            size={40}
+                            size={37}
                             onPress={() => {}}
                         />
                         <Text style={styles.minhasMusicas}>Minhas músicas</Text>
@@ -333,16 +333,19 @@ const styles = StyleSheet.create({
 
     nomeMusica: {
         color: '#FFFFFF',
-        top: 4,
+        top: -2,
+        fontSize: 15,
     },
 
     nomeMusicaTocando: {
         color: "#7B3CE1",
+        top: -2,
+        fontSize: 15,
     },
 
     canal: {
         color: "#797979",
-        top: 12,
+        top: 10,
     },
 
     rodape: {
@@ -383,7 +386,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 30,  // ajuste conforme o espaçamento desejado
+        paddingHorizontal: 70, // espaço entre o headphone e o video
         top: -10,
     },
 
