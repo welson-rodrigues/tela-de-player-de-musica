@@ -184,7 +184,7 @@ export default function Index() {
                     </View>
                 </View>
     
-                <View style={styles.containerImagem}>
+                {/* <View style={styles.containerImagem}>
                     <Image
                         style={styles.imagens}
                         source={require("../assets/images/once.jpeg")}
@@ -201,7 +201,7 @@ export default function Index() {
                             size={25}
                         />
                     </View>
-                </View>
+                </View> */}
             </View>
             <View style={styles.rodape}>
                 <View style={styles.rodapeContainer}>
@@ -229,14 +229,16 @@ export default function Index() {
             </View>
             <View style={styles.musicaAtual}>
               <View style={styles.leftSection}>
+
                 <Image
                     source={require("../assets/images/Ellipse 3.png")}
                     style={styles.albumCover}
                 />
-                <Link href='/'>
+
+                <Link href='/' asChild>
                 <Image
                     source={require("../assets/images/saa magni.jpeg")}
-                    style={styles.elipseAlbun}
+                    style={styles.albumMusicaSaa}
                 />
                 </Link>
                 <View style={styles.textContainer}>
@@ -271,6 +273,7 @@ const styles = StyleSheet.create({
         width: "100%",
         padding: 30,
         backgroundColor: "black",
+        marginTop: -40,
     },
 
     pesquisarContainer: {
@@ -297,14 +300,13 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontSize: 20,
         fontWeight: 'bold',
-        marginTop: 7,
+        top: -2,
         fontFamily: 'Arial',
     },
 
     textos: {
         color: '#FFFFFF',
         fontSize: 17,
-        marginTop: 10,
         fontFamily: 'Arial',
     },
 
@@ -322,7 +324,7 @@ const styles = StyleSheet.create({
     },
 
     imagemRoxo: {
-        marginTop: 5,
+        //marginTop: 0,
         width: 30,
         resizeMode: "contain",
     },
@@ -365,7 +367,6 @@ const styles = StyleSheet.create({
         marginLeft: 10,
     },
 
-
     nomeMusica: {
         color: '#FFFFFF',
         top: -2,
@@ -380,7 +381,6 @@ const styles = StyleSheet.create({
 
     canal: {
         color: "#797979",
-        top: 10,
     },
 
     rodape: {
@@ -409,8 +409,8 @@ const styles = StyleSheet.create({
     },
 
     albumCover: {
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         borderRadius: 25,
         marginLeft: -13,
         marginBottom: 40,
@@ -418,6 +418,7 @@ const styles = StyleSheet.create({
 
     textContainer: {
       justifyContent: 'center',
+      left: 5,
     },
 
     musicTitle: {
@@ -436,13 +437,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    elipseAlbun: {
-        width: 50,
-        height: 50,
+     albumMusicaSaa: {
+        width: 45,
+        height: 45,
         borderRadius: 25,
         marginRight: -40,
         marginBottom: 40,
-        right: 60,
+        right: 53,
     },
 
     tresPontos: {
