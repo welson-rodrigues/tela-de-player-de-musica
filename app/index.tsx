@@ -19,14 +19,16 @@ export default function Index() {
         />
       </View>
 
-      <Link href="/tela2" asChild><View style={styles.menuDown}>
-        <IconButton
-          icon="menu-down"
-          iconColor={"#FFFFFF"}
-          size={45}
-          onPress={() => {}}
-        />
-      </View></Link>
+      <View style={styles.menuDown}>
+        <Link href="/tela2" asChild>
+          <IconButton
+            icon="menu-down"
+            iconColor={"#FFFFFF"}
+            size={45}
+            onPress={() => {}}
+          />
+        </Link>
+      </View>
       
       <Image
         style={styles.imagemMusica}

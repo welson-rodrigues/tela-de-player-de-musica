@@ -4,6 +4,7 @@ import * as React from 'react';
 import { Searchbar, IconButton  } from 'react-native-paper';
 import { Icon } from "react-native-paper";
 import {SafeAreaView} from 'react-native-safe-area-context';
+import { Link } from "expo-router";
 
 export default function Index() {
     const [searchQuery, setSearchQuery] = React.useState('');
@@ -232,10 +233,12 @@ export default function Index() {
                     source={require("../assets/images/Ellipse 3.png")}
                     style={styles.albumCover}
                 />
+                <Link href='/'>
                 <Image
                     source={require("../assets/images/saa magni.jpeg")}
                     style={styles.elipseAlbun}
                 />
+                </Link>
                 <View style={styles.textContainer}>
                   <Text style={styles.musicTitle}>Saa Magni</Text>
                   <Text style={styles.musicArtist}>Oumou Sangaré</Text>
