@@ -11,9 +11,17 @@ export default function Index() {
         colors={['rgba(128, 128, 128, 1)', 'transparent']}
         style={styles.background}
       />
-      <View style={styles.menuContainer}>
+      <View style={styles.menuDots}>
         <Icon
           source="dots-vertical"
+          color={"#FFFFFF"}
+          size={45}
+        />
+      </View>
+
+      <View style={styles.menuDown}>
+        <Icon
+          source="menu-down"
           color={"#FFFFFF"}
           size={45}
         />
@@ -144,11 +152,20 @@ const styles = StyleSheet.create({
     transform: [{ translateX: -25 }, { translateY: -25 }], // totalmente no meio
   },
 
-  menuContainer: {
+  menuDots: {
     width: "100%",
     flexDirection: "row",
     justifyContent: "flex-end",
     marginTop: -20,
+    left: 15,
+  },
+
+  menuDown: {
+    width: "100%",
+    flexDirection: "row",
+    //justifyContent: "flex-end",
+    marginTop: -50,
+    right: 10,
   },
 
   starContainer: {
