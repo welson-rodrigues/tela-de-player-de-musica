@@ -502,6 +502,5 @@ const styles = StyleSheet.create({
 
     musicaAtualItem: {
         alignItems: 'center',
-    }
-
+    },
 });

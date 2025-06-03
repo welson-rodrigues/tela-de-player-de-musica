@@ -1,5 +1,5 @@
 import { Image, StyleSheet, View, Text } from "react-native";
-import { Icon } from "react-native-paper";
+import { Icon, IconButton } from "react-native-paper";
 import { Link } from "expo-router";
 import ProgressBar from 'react-native-progress/Bar';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -19,13 +19,14 @@ export default function Index() {
         />
       </View>
 
-      <View style={styles.menuDown}>
-        <Icon
-          source="menu-down"
-          color={"#FFFFFF"}
+      <Link href="/tela2" asChild><View style={styles.menuDown}>
+        <IconButton
+          icon="menu-down"
+          iconColor={"#FFFFFF"}
           size={45}
+          onPress={() => {}}
         />
-      </View>
+      </View></Link>
       
       <Image
         style={styles.imagemMusica}
@@ -117,7 +118,7 @@ const styles = StyleSheet.create({
   },
 
   imagemMusica: {
-    marginTop: 10,
+    marginTop: -5,
     width: '100%',
     height: 330,
     borderRadius: 25,
@@ -164,8 +165,8 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     //justifyContent: "flex-end",
-    marginTop: -50,
-    right: 10,
+    marginTop: -60,
+    right: 27,
   },
 
   starContainer: {
