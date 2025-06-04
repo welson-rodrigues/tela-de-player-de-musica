@@ -1,8 +1,8 @@
-import { StyleSheet, View, Text, Image } from "react-native";
-import * as React from 'react';
-import { Searchbar, IconButton, Icon  } from 'react-native-paper';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import { Link } from "expo-router";
+import * as React from 'react';
+import { Image, StyleSheet, Text, View } from "react-native";
+import { Icon, IconButton, Searchbar } from 'react-native-paper';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Index() {
     const [searchQuery, setSearchQuery] = React.useState('');
@@ -240,14 +240,15 @@ export default function Index() {
                     style={styles.albumCover}
                 />
 
-                <Link href='/' asChild>
                 <Image
                     source={require("../assets/images/saa magni.jpeg")}
                     style={styles.albumMusicaSaa}
                 />
-                </Link>
+      
                 <View style={styles.textContainer}>
+                    <Link href="/">
                   <Text style={styles.musicTitle}>Saa Magni</Text>
+                  </Link>
                   <Text style={styles.musicArtist}>Oumou Sangaré</Text>
                 </View>
               </View>

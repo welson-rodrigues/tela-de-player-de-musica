@@ -1,8 +1,8 @@
-import { Image, StyleSheet, View, Text } from "react-native";
-import { Icon, IconButton } from "react-native-paper";
-import { Link } from "expo-router";
-import ProgressBar from 'react-native-progress/Bar';
 import { LinearGradient } from 'expo-linear-gradient';
+import { Link } from "expo-router";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { Icon, IconButton } from "react-native-paper";
+import ProgressBar from 'react-native-progress/Bar';
 
 export default function Index() {
   return (
