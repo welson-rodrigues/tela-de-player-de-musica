@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     imagens: {
         width: 50,
         height: 50,
-        borderRadius: 5,
+        borderRadius: 7,
         marginRight: 10,
     },
 
@@ -372,7 +372,7 @@ const styles = StyleSheet.create({
 
     nomeMusica: {
         fontSize: 17,
-        fontWeight: 'bold',
+        //fontWeight: 'bold',
         color: '#FFFFFF',
     },
 
@@ -380,6 +380,7 @@ const styles = StyleSheet.create({
         color: "#7B3CE1",
         top: -2,
         fontSize: 17,
+        //fontWeight: 'bold',
     },
 
     canal: {
