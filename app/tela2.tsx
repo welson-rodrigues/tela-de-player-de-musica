@@ -1,8 +1,6 @@
 import { StyleSheet, View, Text, Image } from "react-native";
-//import { Link } from "expo-router";
 import * as React from 'react';
 import { Searchbar, IconButton, Icon  } from 'react-native-paper';
-//import { Icon } from "react-native-paper";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import { Link } from "expo-router";
 
@@ -137,7 +135,7 @@ export default function Index() {
                         <Text style={styles.nomeMusica}>Worotan</Text>
                         <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Worotan</Text>
                     </View>
-                    <View style={styles.tresPontos}>
+                    <View>
                         <Icon
                             source="dots-vertical"
                             color={"#4C4C4C"}
@@ -155,6 +153,13 @@ export default function Index() {
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusicaTocando}>Saa Magni</Text>
                         <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Ko Sira</Text>
+                    </View>
+                    <View style={styles.equalizer}>
+                        <Icon
+                            source="equalizer"
+                            color="#773FD4"
+                            size={25}
+                        />
                     </View>
                     <View style={styles.saa}>
                         <Icon
@@ -451,19 +456,19 @@ const styles = StyleSheet.create({
         right: 53,
     },
 
-    tresPontos: {
-        marginLeft: 110,
-        top: 12,
-        color: "#4C4C4C",
+    //tresPontos: {
+       // marginLeft: 110,
+        ///marginBottom: 7,
+       // color: "#4C4C4C",
         //justifyContent: 'center',
         //alignItems: 'center',
         //padding: 5,
-    },
+    //},
 
-    Pontos: {
-        marginLeft: 18,
-        top: 9,
-    },
+    //Pontos: {
+        //marginLeft: 18,
+        //top: 9,
+   // },
 
     only: {
         marginLeft: 10,
@@ -472,12 +477,12 @@ const styles = StyleSheet.create({
 
     saa: {
         marginLeft: 117,
-        top: 12,
+        marginTop: 10,
     },
 
     homem: {
         marginLeft: 70,
-        top: 9,
+        top: 2,
     },
 
     rodapeContainer: {
@@ -514,5 +519,9 @@ const styles = StyleSheet.create({
 
     musicaAtualItem: {
         alignItems: 'center',
+    },
+
+    equalizer: {
+        left: 105,
     },
 });
