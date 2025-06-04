@@ -1,8 +1,8 @@
 import { StyleSheet, View, Text, Image } from "react-native";
 //import { Link } from "expo-router";
 import * as React from 'react';
-import { Searchbar, IconButton  } from 'react-native-paper';
-import { Icon } from "react-native-paper";
+import { Searchbar, IconButton, Icon  } from 'react-native-paper';
+//import { Icon } from "react-native-paper";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import { Link } from "expo-router";
 
@@ -59,7 +59,7 @@ export default function Index() {
                     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Jorge da Capadócia</Text>
-                        <Text style={styles.canal}>Racionais MC's | Classicos</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Classicos</Text>
                     </View>
                     <View style={styles.tresPontos}>
                         <Icon
@@ -78,7 +78,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Jesus Chorou</Text>
-                        <Text style={styles.canal}>Racionais MC's | Classicos</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Classicos</Text>
                     </View>
                     <View style={styles.tresPontos}>
                         <Icon
@@ -97,7 +97,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Homem na Estrada</Text>
-                        <Text style={styles.canal}>Racionais MC's | Raio X do Brasil</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Raio X do Brasil</Text>
                     </View>
                     <View style={styles.homem}>
                         <Icon
@@ -116,7 +116,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Fantan Ni Mone</Text>
-                        <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Worotan</Text>
                     </View>
                     <View style={styles.tresPontos}>
                         <Icon
@@ -135,7 +135,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Worotan</Text>
-                        <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Worotan</Text>
                     </View>
                     <View style={styles.tresPontos}>
                         <Icon
@@ -154,7 +154,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusicaTocando}>Saa Magni</Text>
-                        <Text style={styles.canal}>Oumou Sangaré | Ko Sira</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Ko Sira</Text>
                     </View>
                     <View style={styles.saa}>
                         <Icon
@@ -173,7 +173,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Only For You</Text>
-                        <Text style={styles.canal}>Heartless Bastards - Topic | Heartless Ba...</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Heartless Bastards - Topic | Heartless Ba...</Text>
                     </View>
                     <View style={styles.only}>
                         <Icon
@@ -351,36 +351,40 @@ const styles = StyleSheet.create({
     },
 
     containerImagem: {
-        width: "100%",
         flexDirection: 'row',
-        //alignItems: 'center',
-        marginTop: 18,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingVertical: 10,
+        width: '100%',
     },
 
     imagens: {
-        width: 47,
-        height: 45,
+        width: 50,
+        height: 50,
         borderRadius: 5,
+        marginRight: 10,
     },
 
     containerNomeMusica: {
-        marginLeft: 10,
+        flex: 1,
+        justifyContent: 'center',
     },
 
     nomeMusica: {
+        fontSize: 17,
+        fontWeight: 'bold',
         color: '#FFFFFF',
-        top: -2,
-        fontSize: 15,
     },
 
     nomeMusicaTocando: {
         color: "#7B3CE1",
         top: -2,
-        fontSize: 15,
+        fontSize: 17,
     },
 
     canal: {
         color: "#797979",
+        fontSize: 14,
     },
 
     rodape: {
@@ -449,7 +453,10 @@ const styles = StyleSheet.create({
     tresPontos: {
         marginLeft: 110,
         top: 12,
-        color: "#4C4C4C"
+        color: "#4C4C4C",
+        //justifyContent: 'center',
+        //alignItems: 'center',
+        //padding: 5,
     },
 
     Pontos: {
