@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={['rgba(128, 128, 128, 1)', 'transparent']}
+        colors={['rgb(128, 128, 128)', 'transparent']}
         style={styles.background}
       />
       <View style={styles.menuDots}>
