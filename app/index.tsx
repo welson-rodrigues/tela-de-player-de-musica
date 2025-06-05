@@ -20,7 +20,7 @@ export default function Index() {
       </View>
 
       <View style={styles.menuDown}>
-        <Link href="/tela2" asChild>
+        <Link href="/Minhas_Musicas" asChild>
           <IconButton
             icon="menu-down"
             iconColor={"#FFFFFF"}

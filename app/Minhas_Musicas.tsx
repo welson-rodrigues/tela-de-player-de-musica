@@ -57,9 +57,9 @@ export default function Index() {
                     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Jorge da Capadócia</Text>
-                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Classicos</Text>
+                        <Text style={styles.canal}>Racionais MC's | Classicos</Text>
                     </View>
-                    <View style={styles.tresPontos}>
+                    <View>
                         <Icon
                             source="dots-vertical"
                             color={"#4C4C4C"}
@@ -76,9 +76,9 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Jesus Chorou</Text>
-                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Classicos</Text>
+                        <Text style={styles.canal}>Racionais MC's | Classicos</Text>
                     </View>
-                    <View style={styles.tresPontos}>
+                    <View>
                         <Icon
                             source="dots-vertical"
                             color={"#4C4C4C"}
@@ -95,7 +95,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Homem na Estrada</Text>
-                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Raio X do Brasil</Text>
+                        <Text style={styles.canal} numberOfLines={1}>Racionais MC's | Raio X do Brasil</Text>  {/* numberOfLines={1} adicionado para não quebrar linha*/}
                     </View>
                     <View style={styles.homem}>
                         <Icon
@@ -114,9 +114,9 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Fantan Ni Mone</Text>
-                        <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Worotan</Text>
+                        <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
                     </View>
-                    <View style={styles.tresPontos}>
+                    <View>
                         <Icon
                             source="dots-vertical"
                             color={"#4C4C4C"}
@@ -133,7 +133,7 @@ export default function Index() {
     
                     <View style={styles.containerNomeMusica}>
                         <Text style={styles.nomeMusica}>Worotan</Text>
-                        <Text style={styles.canal} numberOfLines={1}>Oumou Sangaré | Worotan</Text>
+                        <Text style={styles.canal}>Oumou Sangaré | Worotan</Text>
                     </View>
                     <View>
                         <Icon
@@ -457,19 +457,19 @@ const styles = StyleSheet.create({
         right: 53,
     },
 
-    //tresPontos: {
-       // marginLeft: 110,
-        ///marginBottom: 7,
-       // color: "#4C4C4C",
-        //justifyContent: 'center',
-        //alignItems: 'center',
-        //padding: 5,
-    //},
+   /*  tresPontos: {
+        marginLeft: 110,
+        marginBottom: 7,
+        color: "#4C4C4C",
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 5,
+    }, */
 
-    //Pontos: {
-        //marginLeft: 18,
-        //top: 9,
-   // },
+    /* Pontos: {
+        marginLeft: 18,
+        top: 9,
+    }, */
 
     only: {
         marginLeft: 10,
